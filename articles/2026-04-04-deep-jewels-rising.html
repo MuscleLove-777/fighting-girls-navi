@@ -32,6 +32,24 @@
         .tag { background: rgba(230,57,70,0.15); color: #ff6b7a; padding: 2px 12px; border-radius: 12px; font-size: 0.8rem; }
         footer { text-align: center; margin-top: 60px; padding: 20px; border-top: 1px solid var(--border); }
         footer a { color: var(--accent); text-decoration: none; }
+        .hero-img {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .hero-img::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(transparent, var(--bg-primary));
+        }
     </style>
 </head>
 <body>
@@ -39,6 +57,7 @@
         <a href="../index.html" class="back">&larr; 格闘女子ナビに戻る</a>
         <div class="date">2026-04-04</div>
         <h1>DEEP JEWELSが育てる次世代スター──山吹マリン、ケイト・ロータス、LIBBYの衝撃</h1>
+        <div class="hero-img" style="background-image: url('https://images.unsplash.com/photo-1708134003412-7a05fe510a5f?w=800&h=400&fit=crop&q=80')"></div>
         <div class="content">
             <p>日本の女子MMAを語る上で欠かせない存在、DEEP JEWELS。2008年の設立以来、浜崎朱加、ハム・ソヒ、伊澤星花とRIZIN女子王者を次々と輩出してきたこの団体から、いま新たなスターが続々と誕生している。</p>
             <p>長身を活かしたテイクダウンとグラウンドコントロールで頭角を現す山吹マリンは、2025年に元RIZINガールのあきぴに勝利して一気に注目を浴びた。豪快な1R KO勝ちで会場を沸かせるケイト・ロータスは、フィニッシュ率の高さが際立つ。そして新鋭LIBBYも1R KOでデビューから衝撃を与え、若さと勢いで観客を魅了している。3人に共通するのは「倒しに行く」攻めの姿勢。DEEP JEWELSの未来は、とてつもなく明るい。</p>

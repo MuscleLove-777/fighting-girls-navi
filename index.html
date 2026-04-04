@@ -59,7 +59,8 @@
 
         /* ===== HERO ===== */
         .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.92) 50%, rgba(15,52,96,0.92) 100%),
+                        url('https://images.unsplash.com/photo-1545191050-4228dc5d7ddc?w=1600&h=600&fit=crop&q=80') center/cover no-repeat;
             padding: 80px 20px 60px;
             text-align: center;
             position: relative;
@@ -163,6 +164,19 @@
             position: relative;
             overflow: hidden;
         }
+        .fighter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 12px 12px 0 0;
+        }
+        .fighter-card[data-tags*="rizin"]::before { background: linear-gradient(90deg, #e63946, #ff8c00); }
+        .fighter-card[data-tags*="deep"]::before { background: linear-gradient(90deg, #9b59b6, #e91e8b); }
+        .fighter-card[data-tags*="one"]::before { background: linear-gradient(90deg, #ffd700, #ff8c00); }
+        .fighter-card[data-tags*="kick"]::before { background: linear-gradient(90deg, #3498db, #00bcd4); }
         .fighter-card:hover {
             transform: translateY(-4px);
             border-color: var(--accent);
@@ -235,6 +249,14 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
+        }
+        .blog-thumb {
+            width: calc(100% + 40px);
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px 12px 0 0;
+            margin: -20px -20px 16px -20px;
         }
         .blog-card {
             background: var(--bg-card);
@@ -547,6 +569,7 @@
         <div class="blog-grid" id="blog-grid">
 
             <article class="blog-card">
+                <div class="blog-thumb" style="background-image: url('https://images.unsplash.com/photo-1708134003412-7a05fe510a5f?w=800&h=300&fit=crop&q=80')"></div>
                 <div class="blog-date">2026-04-04</div>
                 <h3><a href="articles/2026-04-04-izawa-queen.html">伊澤星花が見せた「絶対女王」の貫禄──RIZINスーパーアトム級の頂に立ち続ける理由</a></h3>
                 <p>大晦日RENAとの激闘を制し3度目の防衛に成功した伊澤星花。開始54秒でダウンを奪われながらも冷静にギロチンチョークで逆転一本勝ち。その精神力と技術力の高さに迫る。</p>
@@ -558,6 +581,7 @@
             </article>
 
             <article class="blog-card">
+                <div class="blog-thumb" style="background-image: url('https://images.unsplash.com/photo-1530679546306-f0ff3e83d96b?w=800&h=300&fit=crop&q=80')"></div>
                 <div class="blog-date">2026-04-04</div>
                 <h3><a href="articles/2026-04-04-rena-comeback.html">RENA「このままやめれん」──大晦日の涙と再起への決意</a></h3>
                 <p>伊澤星花に一本負けを喫したRENAだが、開始54秒で左フックのダウンを奪った場面は圧巻だった。「倒せるの私しかいない」と語った彼女の次なるステージとは。</p>
@@ -569,6 +593,7 @@
             </article>
 
             <article class="blog-card">
+                <div class="blog-thumb" style="background-image: url('https://images.unsplash.com/photo-1525680996651-0222228be6f0?w=800&h=300&fit=crop&q=80')"></div>
                 <div class="blog-date">2026-04-04</div>
                 <h3><a href="articles/2026-04-04-deep-jewels-rising.html">DEEP JEWELSが育てる次世代スター──山吹マリン、ケイト・ロータス、LIBBYの衝撃</a></h3>
                 <p>日本の女子MMAを支えるDEEP JEWELSから、続々と新星が誕生中。長身テイクダウンの山吹マリン、豪快KOのケイト・ロータス、勢いで突き進むLIBBY。3人の魅力を徹底解剖！</p>
