@@ -10,21 +10,8 @@ GitHub Pages でホスティングし、スケジュールエージェントが�
 - X: @MuscleGirlLove7
 - Patreon: https://www.patreon.com/MuscleLove
 
-## 掲載対象選手リスト
-| # | 選手名 | 英名 | 団体 | 特徴 |
-|---|--------|------|------|------|
-| 1 | 伊澤星花 | Seika Izawa | RIZIN / DEEP JEWELS | スーパーアトム級絶対王者、2階級制覇 |
-| 2 | RENA | RENA | シュートボクシング / RIZIN | ジョシカクの火付け役、打撃最強 |
-| 3 | 浜崎朱加 | Ayaka Hamasaki | RIZIN / DEEP JEWELS | 初代RIZIN女子王者、25勝2敗 |
-| 4 | ハム・ソヒ | Ham Seo Hee | ONE Championship | 韓国の女子MMAスーパースター |
-| 5 | 渡辺華奈 | Kana Watanabe | RIZIN / Bellator | 柔道→MMA転身、海外参戦 |
-| 6 | 杉山しずか | Shizuka Sugiyama | RIZIN / DEEP JEWELS | つよカワの代名詞 |
-| 7 | 万智 | Machi | DEEP JEWELS | ストロー級現王者 |
-| 8 | パク・シユン | Park Si Yun | DEEP JEWELS | アトム級元王者、韓国出身 |
-| 9 | 山吹マリン | Marin Yamabuki | DEEP JEWELS | 長身テイクダウン、新鋭 |
-| 10 | ケイト・ロータス | Kate Lotus | DEEP JEWELS | 豪快KO、フィニッシャー |
-| 11 | HIME | HIME | DEEP JEWELS | ストライカー |
-| 12 | LIBBY | LIBBY | DEEP JEWELS | 新鋭、1R KO |
+## 掲載対象（ロスター）
+記事対象の選手リストは必ず `references/roster.md` を読んで参照すること。リストの追加・更新もそのファイルに対して行う。
 
 ## 記事生成ルール
 1. **言語**: 日本語
@@ -43,7 +30,7 @@ GitHub Pages でホスティングし、スケジュールエージェントが�
    - URL形式: `https://images.unsplash.com/photo-XXXXX?w=800&h=400&fit=crop&q=80`
    - テーマ例: MMA → "MMA octagon cage", 打撃 → "boxing fight", トレーニング → "martial arts gym"
    - 必ず実在するUnsplash画像URLを確認してから使うこと
-8. **広告カード**: 全記事とindex.htmlのフッター直前に MuscleLove広告カード（ML_PROMO_CARDマーカー）を必ず含める
+8. **広告カード**: 全記事とindex.htmlのフッター直前に MuscleLove広告カード（ML_PROMO_CARDマーカー）を必ず含める。広告カードにはX / Patreon / ゲームポータルの3導線を必ず入れる
 
 ## ファイル構成
 ```
@@ -138,6 +125,7 @@ GitHub Pages でホスティングし、スケジュールエージェントが�
         <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
           <a href="https://x.com/MuscleGirlLove7" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#1d9bf0;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">X @MuscleGirlLove7</a>
           <a href="https://www.patreon.com/MuscleLove" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#ff424d;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">Patreon 限定コンテンツ</a>
+          <a href="https://musclelove-games.vercel.app/?utm_source=blog&amp;utm_medium=promo_card&amp;utm_campaign=fighting-girls-blog" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#22c55e;color:#0b1220;border-radius:6px;font-weight:800;text-decoration:none;">🎮 無料ゲーム95本</a>
         </div>
       </div>
     </section>
